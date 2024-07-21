@@ -1,0 +1,113 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:black;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0px;
+    background-color:black;
+    box-shadow: 1px 1px 10px aqua;
+    border-radius: 20px;
+}
+.left{
+    display: flex;
+    flex-direction: row;
+}
+header  img {
+    height: 40px;
+    margin-left: 30px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow:0 4px 8px aqua;
+}
+header h1 {
+    font-size: 24px;
+    margin: 10px;
+    color:white;
+    filter:drop-shadow(1px 1px 20px aqua);
+}
+
+.watch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    padding: 5%;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 20px aqua);
+    box-shadow: 2px 2px 20px aqua;
+}
+.watch img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure the image is behind the content */
+}
+.container {
+    text-align: center;
+    color:white;
+    
+}
+#display {
+    font-size: 3em;
+    margin-bottom: 20px;
+    
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+.buttons button, .laps button{
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: black;
+    color: white; 
+    border-radius: 20px; 
+    border: 1px solid aqua; 
+    padding: 10px 20px;
+    box-shadow:0 4px 8px aqua;
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.buttons button:hover,.laps button:hover {
+    transform: scale(1.1); /* Scale up slightly on hover */
+    box-shadow: 0 4px 8px midnightblue; /* Box shadow with midnightblue color */
+}
+
+#laps-list {
+    color: white;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.laps-list-active {
+    border: 2px solid white;
+    border-radius: 20px;
+    width:fit-content;
+    max-width: 300px; /* Optional: to limit the width of the lap list */
+    box-shadow: 0 4px 8px aqua;
+}
+
